@@ -21,12 +21,13 @@
     <link rel="stylesheet" href="styles/style.css" />
     <title>Najmul Shaon's portfolio</title>
   </head>
-  <body class="max-w-7xl mx-auto">
+  <body class="bg-green-50">
     <!-- menu bar  -->
-    <nav>
-      <div class="navbar bg-base-100">
+    <nav class="max-w-7xl mx-auto">
+      <div class="navbar">
         <div class="navbar-start">
           <div class="dropdown">
+            <!-- hamburger menu icon for small device  -->
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -43,18 +44,20 @@
                 />
               </svg>
             </div>
+            <!-- drop down content  -->
             <ul
               tabindex="0"
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
-              <li><a>Item 1</a></li>
-              <li>
-                <a>Parents</a>
-              </li>
-              <li><a>Item 3</a></li>
+              <li><a>Home</a></li>
+              <li><a>About Me</a></li>
+              <li><a>Experience</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
             </ul>
           </div>
-          <a class="text-xl playwrite-es-font text-green-700 font-extrabold"
+          <a class="lg:text-xl text-base playwrite-es-font text-green-700 font-extrabold"
             >Najmul Shaon</a
           >
         </div>
@@ -69,21 +72,22 @@
           </ul>
         </div>
         <div class="navbar-end">
-          <a class="btn">Hire Me!</a>
+          <a class="btn text-white bg-green-400">Hire Me!</a>
         </div>
       </div>
     </nav>
-    <header>
+    <header class="max-w-7xl mx-auto">
       <section class="flex items-center gap-4">
-        <section class="w-2/4">
-          <p class="poppins-regular text-xl">Hello, <span>my name is</span></p>
-          <h1>Najmul Shaon</h1>
-          <p>I'm a Web Developer</p>
-          <p>
+        <section class="w-2/4 poppins">
+          <p class="text-2xl text-black font-semibold text-green-700">Hello, my name is</p>
+          <h1 class="font-bold text-5xl pt-4">Najmul Shaon</h1>
+          <p class="text-black text-lg pt-4 font-semibold">I'm a Web Developer</p>
+          <p class="text-gray-400 pt-2">
             I'm a web designer & front‑end developer focused on crafting clean &
             user‑friendly experiences, I am passionate about building excellent
             application that improves the lives of those around me.
           </p>
+          <div class="pt-4"><a class="btn text-white bg-green-400">Hire Me!</a></div>
         </section>
         <section class="w-2/4">
           <!-- header image  -->
