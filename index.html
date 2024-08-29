@@ -23,7 +23,7 @@
   </head>
   <body class="bg-green-50">
     <!-- menu bar  -->
-    <nav class="max-w-7xl mx-auto">
+    <nav class="container mx-auto">
       <div class="navbar">
         <div class="navbar-start">
           <div class="dropdown">
@@ -57,7 +57,8 @@
               <li><a class="text-lg text-black">Contact Us</a></li>
             </ul>
           </div>
-          <a class="lg:text-xl text-base playwrite-es-font text-green-700 font-extrabold"
+          <a
+            class="lg:text-xl text-base playwrite-es-font text-[#00bda5] font-extrabold cursor-pointer"
             >Najmul Shaon</a
           >
         </div>
@@ -72,32 +73,340 @@
           </ul>
         </div>
         <div class="navbar-end">
-          <a class="btn text-white bg-green-400">Hire Me!</a>
+          <a
+            class="btn text-white bg-[#00bda5] text-lg font-bold hover:bg-[#00bda5] hover:opacity-60"
+            >Hire Me!</a
+          >
         </div>
       </div>
     </nav>
-    <header class="max-w-7xl mx-auto">
-      <section class="flex items-center gap-4">
-        <section class="w-2/4 poppins">
-          <p class="text-2xl text-black font-semibold text-green-700">Hello, my name is</p>
-          <h1 class="font-bold text-5xl pt-4">Najmul Shaon</h1>
-          <p class="text-black text-lg pt-4 font-semibold">I'm a Web Developer</p>
-          <p class="text-gray-400 pt-2">
+    <header class="container mx-auto">
+      <section class="flex flex-col-reverse md:flex-row items-center gap-4">
+        <div class="md:w-2/4 w-full poppins space-y-4 px-4 md:px-0">
+          <p class="text-2xl font-semibold text-[#00bda5]">Hello, my name is</p>
+          <h1 class="font-bold text-5xl">Najmul Shaon</h1>
+          <p class="text-black text-lg font-semibold">
+            I'm a <span class="text-[#00bda5]">Full Stack</span> Developer
+          </p>
+          <p class="text-gray-400">
             I'm a web designer & front‑end developer focused on crafting clean &
             user‑friendly experiences, I am passionate about building excellent
             application that improves the lives of those around me.
           </p>
-          <div class="pt-4"><a class="btn text-white bg-green-400">Hire Me!</a></div>
-        </section>
-        <section class="w-2/4">
+
+          <a
+            class="btn text-white bg-[#00bda5] text-lg font-bold hover:bg-[#00bda5] hover:opacity-60"
+            >Hire Me!</a
+          >
+        </div>
+        <div class="w-full md:w-2/4 px-4 md:px-0">
           <!-- header image  -->
-          <div>
+          <figure>
             <img src="images/Remove-BG-01-v3 crop 600x661.png" alt="" />
-          </div>
-        </section>
+          </figure>
+        </div>
       </section>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <!-- about  -->
+      <!-- <section id="about" class="about secondary-bg w-full">
+        <div class="about-container space-y-4">
+          <h3 class="text-4xl font-bold text-black">About Me</h3>
+          <p class="text-gray-400">
+            I'm a passionate MERN stack developer with expertise in MongoDB,
+            Express.js, React, and Node.js. I create dynamic and responsive web
+            applications focused on delivering exceptional user experiences. My
+            dedication to continuous learning ensures I stay ahead in the
+            ever-evolving tech landscape.
+          </p>
+          <div class="about-items">
+            <div class="about-item">
+              <p class="item-title">Name</p>
+              <p class="item-description">Najmul Shaon</p>
+            </div>
+            <div class="about-item">
+              <p class="item-title">E-mail</p>
+              <p class="item-description">en.nhshaon@gmail.com</p>
+            </div>
+            <div class="about-item">
+              <p class="item-title">Phone</p>
+              <p class="item-description">+8801721933810</p>
+            </div>
+            <div class="about-item">
+              <p class="item-title">From</p>
+              <p class="item-description">Dhaka, BD</p>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <section id="about" class="w-full md:w-9/12 mx-auto container">
+        <div class="space-y-4 px-8 py-8 border-y-2">
+          <h3 class="text-4xl font-bold text-black text-center">About Me</h3>
+          <p class="text-gray-400 text-center text-lg">
+            I'm a passionate MERN stack developer with expertise in MongoDB,
+            Express.js, React, and Node.js. I create dynamic and responsive web
+            applications focused on delivering exceptional user experiences. My
+            dedication to continuous learning ensures I stay ahead in the
+            ever-evolving tech landscape.
+          </p>
+          <div class="about-items">
+            <div class="about-item">
+              <p class="item-title">Name</p>
+              <p class="item-description">Najmul Shaon</p>
+            </div>
+            <div class="about-item">
+              <p class="item-title">E-mail</p>
+              <p class="item-description">en.nhshaon@gmail.com</p>
+            </div>
+            <div class="about-item">
+              <p class="item-title">Phone</p>
+              <p class="item-description">+8801721933810</p>
+            </div>
+            <div class="about-item">
+              <p class="item-title">From</p>
+              <p class="item-description">Dhaka, BD</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- what is do section start -->
+      <section id="skills" class="container mx-auto space-y-4 px-4 md:px-0">
+        <h3 class="text-4xl font-bold text-black text-center">What I do v2</h3>
+        <p class="text-gray-400 text-lg text-center w-full md:w-9/12 mx-auto">
+          I have more than 10 years experience building software for clients all
+          over the world. Below is a quick overview of my main technical skill
+          sets and technologies i use. Want to find out more about my
+          experience? Check out my online resume and project portfolio.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div
+            class="p-7 rounded-lg drop-shadow hover:bg-opacity-20 hover:bg-opacity-20 space-y-4 bg-[#e34c26] bg-opacity-10"
+          >
+            <img src="images/icons/html.png" alt="" />
+            <h4 class="text-lg font-bold">HTML</h4>
+            <p class="text-gray-800 text-lg">
+              I structure web content with HTML, providing the essential
+              framework for all web pages. This includes organizing text,
+              images, links, and multimedia elements. My work ensures that the
+              content is well-organized and accessible.
+            </p>
+            <div>
+              <ul class="space-y-4">
+                <li class="space-x-1 text-xl font-medium text-xl font-medium">
+                  <i class="fa-solid fa-check"></i>
+                  <a
+                    target="_blank"
+                    href="https://najmul-shaon.github.io/hello-world/"
+                    >Dev Roadmap</a
+                  >
+                </li>
+                <li class="space-x-1 text-xl font-medium">
+                  <i class="fa-solid fa-check"></i>
+                  <a
+                    target="_blank"
+                    href="https://najmul-shaon.github.io/bike_zone/"
+                    >Bike Zone</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="p-7 rounded-lg drop-shadow hover:bg-opacity-20 hover:bg-opacity-20 space-y-4 bg-[#264de4] bg-opacity-10"
+          >
+            <img src="images/icons/css.png" alt="" />
+            <h4 class="text-lg font-bold">CSS</h4>
+            <p class="text-gray-800 text-lg">
+              I style and design web pages using CSS, enhancing their visual
+              appeal and user experience. Through layout control, color schemes,
+              and typography, I ensure that websites are aesthetically pleasing.
+              My designs are responsive, adapting seamlessly to various devices
+              and screen sizes.
+            </p>
+            <div>
+              <ul class="space-y-4">
+                <li class="space-x-1 text-xl font-medium">
+                  <i class="fa-solid fa-check"></i>
+                  <a
+                    target="_blank"
+                    href="https://najmul-shaon.github.io/eduford/"
+                    >EduFord</a
+                  >
+                </li>
+                <li class="space-x-1 text-xl font-medium">
+                  <i class="fa-solid fa-check"></i>
+                  <a
+                    target="_blank"
+                    href="https://najmul-shaon.github.io/barber/"
+                    >Barber Shop</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="p-7 rounded-lg drop-shadow hover:bg-opacity-20 space-y-4 bg-[#f0db4f] bg-opacity-10"
+          >
+            <img src="images/icons/js.png" alt="" />
+            <h4 class="text-lg font-bold">JavaScript</h4>
+            <p class="text-gray-800 text-lg">
+              I bring websites to life with JavaScript, adding interactivity and
+              dynamic features. This includes functionalities like form
+              validation, animations, and real-time updates. My JavaScript
+              solutions make websites more engaging and user-friendly.
+            </p>
+            <div>
+              <ul class="space-y-4">
+                <li class="space-x-1 text-xl font-medium">
+                  <i class="fa-solid fa-check"></i>
+                  <a
+                    target="_blank"
+                    href="https://keen-paletas-af490d.netlify.app/"
+                    >Weather Report</a
+                  >
+                </li>
+                <li class="space-x-1 text-xl font-medium">
+                  <i class="fa-solid fa-check"></i>
+                  <a
+                    target="_blank"
+                    href="https://najmul-shaon.github.io/28-pin-matcher/"
+                    >OTP</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="p-7 rounded-lg drop-shadow hover:bg-opacity-20 space-y-4 bg-opacity-10 bg-[#61dbfb]"
+          >
+            <img src="images/icons/react.png" alt="" />
+            <h4 class="text-lg font-bold">React js</h4>
+            <p class="text-gray-800 text-lg">
+              I build efficient and scalable user interfaces with ReactJS,
+              utilizing reusable components. This approach allows for faster
+              development and easier maintenance of complex applications. My
+              ReactJS projects deliver high-performance, responsive web
+              experiences.
+            </p>
+            <div>
+              <ul class="space-y-4">
+                <li class="space-x-1 text-xl font-medium">
+                  <i class="fa-solid fa-check"></i>
+                  <a
+                    target="_blank"
+                    href="https://super-pie-fb5d7b.netlify.app/"
+                    >Career Hub</a
+                  >
+                </li>
+                <li class="space-x-1 text-xl font-medium">
+                  <i class="fa-solid fa-check"></i>
+                  <a
+                    target="_blank"
+                    href="https://euphonious-malabi-507005.netlify.app/"
+                    >Knowledge Cafe</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="resume">
+        <h3 class="section-title text-center">A summary of My Resume</h3>
+        <div class="resume-container">
+          <div class="resume-column">
+            <h3 class="resume-column-title">My Education</h3>
+            <div class="experience">
+              <h4 class="experience-title">
+                BSc in Computer Science & Engineering
+              </h4>
+              <h5 class="experience-sub-title">
+                Dhaka International University / 2021 - 2024
+              </h5>
+            </div>
+            <hr />
+            <div class="experience">
+              <h4 class="experience-title">Diploma in Computer Engineering</h4>
+              <h5 class="experience-sub-title">
+                Barisal Polytechnic Institute / 2015 - 2019
+              </h5>
+            </div>
+            <hr />
+            <div class="experience">
+              <h4 class="experience-title">Secondary School Certificate</h4>
+              <h5 class="experience-sub-title">
+                Patabunia Secodary School / 2013 - 2014
+              </h5>
+            </div>
+          </div>
+          <div class="resume-column">
+            <h3 class="resume-column-title">My Experience</h3>
+            <div class="experience">
+              <h4 class="experience-title">Assistant Engineer</h4>
+              <h5 class="experience-sub-title">
+                OnnoRokom Software Ltd / 2022 - Continuing
+              </h5>
+            </div>
+            <hr />
+            <div class="experience">
+              <h4 class="experience-title">It Support</h4>
+              <h5 class="experience-sub-title">
+                Beacon Pharmaceuticals Ltd / 2020 - 2022
+              </h5>
+            </div>
+            <hr />
+          </div>
+        </div>
+        <div class="text-center resume-download-cv">
+          <button class="btn-primary">
+            <i class="fa-solid fa-download"></i> Download CV
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer id="hire" class="secondary-bg">
+      <div class="footer-column">
+        <h3 class="section-title">Lets Connect</h3>
+        <p>
+          Please fill out the form on this section to contact with me or call
+          between 9:00 A.M and 8.00 P.M ET, Sunday through Thursday.
+        </p>
+        <div class="social-icons-container">
+          <a target="_blank" href="https://www.facebook.com/najmulshaonnhs">
+            <i class="fa-brands fa-facebook"></i
+          ></a>
+          <a target="_blank" href="https://github.com/Najmul-Shaon"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/najmul-hasan-75a096205/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h3 class="section-title">Let’s Inbox me</h3>
+        <form action="">
+          <input type="text" name="" id="" placeholder="Your Name" />
+          <input type="email" name="" id="" placeholder="Your Email" />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="20"
+            placeholder="Message"
+          ></textarea>
+          <input class="btn-primary" type="submit" value="Submit" />
+        </form>
+      </div>
+    </footer>
+    <!-- font FontAwesome  -->
+    <script
+      src="https://kit.fontawesome.com/0c1139f033.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
