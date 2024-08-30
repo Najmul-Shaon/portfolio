@@ -66,9 +66,7 @@
   color: #757575;
 }
 
-.text-center {
-  text-align: center;
-}
+
 
 .hamBurger {
   display: none;
@@ -210,77 +208,13 @@ main section {
 .experience-sub-title {
   font-size: 20px;
   font-weight: 600;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 .experience-description,
 .experience-sub-title {
   color: #757575;
 }
-.resume hr {
+/* .resume hr {
   margin: 30px 5px;
-}
-
-.resume-download-cv {
-  margin-top: 50px;
-}
-
-/* footer styles */
-/* footer {
-  padding: 130px 230px;
-  display: flex;
-  gap: 100px;
-} */
-/* .footer-column {
-  width: 50%;
 } */
 
-/* responsive media  */
-/* for small device  */
-@media screen and (max-width: 576px) {
-  .skills-container,
-  .resume-container,
-  .about-items,
-  .banner {
-    flex-direction: column;
-  }
-  .hamBurger {
-    display: block;
-  }
-  /* .nav-title{
-    text-align: start;
-  } */
-
-  /* nav{
-
-  } */
-
-  /* nav > ul {
-    display: none;
-  } */
-  .banner {
-    margin: 20px;
-  }
-  .about,
-  .resume-column {
-    padding: 20px;
-  }
-  .header {
-    background-image: none;
-  }
-
-  /* footer {
-    flex-direction: column-reverse;
-  } */
-
-  .banner-profile-pic {
-    width: 100%;
-  }
-  .social-icons-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .resume-column {
-    width: 90%;
-  }
-}
