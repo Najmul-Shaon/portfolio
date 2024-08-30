@@ -82,25 +82,25 @@
 }
 
 /* Nav styles */
-nav {
+/* nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0 200px;
-}
+} */
 
-.nav-title {
+/* .nav-title {
   font-weight: 800;
   font-size: 45px;
   cursor: pointer;
-}
+} */
 
-nav ul {
+/* nav ul {
   display: flex;
   align-items: center;
-}
+} */
 
-nav ul li {
+/* nav ul li {
   list-style: none;
   margin-right: 50px;
 }
@@ -108,7 +108,7 @@ nav ul li {
 nav li a {
   text-decoration: none;
   font-size: 20px;
-}
+} */
 
 /* banner styles */
 .banner {
@@ -236,41 +236,19 @@ main section {
 }
 
 /* footer styles */
-footer {
+/* footer {
   padding: 130px 230px;
   display: flex;
   gap: 100px;
-}
-.footer-column {
+} */
+/* .footer-column {
   width: 50%;
-}
+} */
 
-footer input[type="text"],
-footer input[type="email"],
-footer textarea {
-  height: 64px;
-  border-radius: 5px;
-  background-color: white;
-  display: block;
-  width: 100%;
-  padding: 10px 20px;
-  margin-bottom: 24px;
-  border: none;
-}
-.fa-brands {
-  font-size: 36px;
-  margin-right: 24px;
-}
 
-.fa-facebook {
-  color: blue;
-}
-.fa-linkedin {
-  color: rgb(36, 167, 190);
-}
-.fa-github {
-  color: rgb(22, 22, 20);
-}
+
+
+
 
 /* responsive media  */
 /* for small device  */
@@ -284,23 +262,21 @@ footer textarea {
   .hamBurger {
     display: block;
   }
-  .nav-title{
+  /* .nav-title{
     text-align: start;
-  }
+  } */
 
-  nav{
+  /* nav{
 
-  }
+  } */
 
-  nav > ul {
-    /* gap: 30px; */
+  /* nav > ul {
     display: none;
-  }
+  } */
   .banner {
     margin: 20px;
   }
   .about,
-  footer,
   .resume-column {
     padding: 20px;
   }
@@ -308,17 +284,11 @@ footer textarea {
     background-image: none;
   }
 
-  footer {
+  /* footer {
     flex-direction: column-reverse;
-  }
-  .footer-column {
-    width: 100%;
-  }
-  footer input[type="text"],
-  footer input[type="email"],
-  footer textarea {
-    width: calc(100% - 40px);
-  }
+  } */
+ 
+  
   .banner-profile-pic {
     width: 100%;
   }
