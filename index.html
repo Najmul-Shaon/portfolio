@@ -139,7 +139,7 @@
           </div>
         </div>
       </section> -->
-      <section id="about" class="w-full md:w-9/12 mx-auto container">
+      <section id="about" class="w-full md:w-9/12 mx-auto container py-24">
         <div class="space-y-4 px-8 py-8 border-y-2">
           <h3 class="text-4xl font-bold text-black text-center">About Me</h3>
           <p class="text-gray-400 text-center text-lg">
@@ -171,7 +171,7 @@
       </section>
       <!-- what is do section start -->
       <section id="skills" class="container mx-auto space-y-4 px-4 md:px-0">
-        <h3 class="text-4xl font-bold text-black text-center">What I do v2</h3>
+        <h3 class="text-4xl font-bold text-black text-center">What I do</h3>
         <p class="text-gray-400 text-lg text-center w-full md:w-9/12 mx-auto">
           I have more than 10 years experience building software for clients all
           over the world. Below is a quick overview of my main technical skill
@@ -181,7 +181,7 @@
 
         <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
           <div
-            class="p-7 rounded-lg drop-shadow hover:bg-opacity-20 hover:bg-opacity-20 space-y-4 bg-[#e34c26] bg-opacity-10"
+            class="p-7 rounded-lg drop-shadow hover:bg-opacity-20 hover:bg-opacity-20 space-y-4 bg-[#e34c26] bg-opacity-10 skill"
           >
             <img src="images/icons/html.png" alt="" />
             <h4 class="text-lg font-bold">HTML</h4>
@@ -213,7 +213,7 @@
             </div>
           </div>
           <div
-            class="p-7 rounded-lg drop-shadow hover:bg-opacity-20 hover:bg-opacity-20 space-y-4 bg-[#264de4] bg-opacity-10"
+            class="p-7 rounded-lg drop-shadow hover:bg-opacity-20 hover:bg-opacity-20 space-y-4 bg-[#264de4] bg-opacity-10 skill"
           >
             <img src="images/icons/css.png" alt="" />
             <h4 class="text-lg font-bold">CSS</h4>
@@ -246,7 +246,7 @@
             </div>
           </div>
           <div
-            class="p-7 rounded-lg drop-shadow hover:bg-opacity-20 space-y-4 bg-[#f0db4f] bg-opacity-10"
+            class="p-7 rounded-lg drop-shadow hover:bg-opacity-20 space-y-4 bg-[#f0db4f] bg-opacity-10 skill"
           >
             <img src="images/icons/js.png" alt="" />
             <h4 class="text-lg font-bold">JavaScript</h4>
@@ -278,7 +278,7 @@
             </div>
           </div>
           <div
-            class="p-7 rounded-lg drop-shadow hover:bg-opacity-20 space-y-4 bg-opacity-10 bg-[#61dbfb]"
+            class="p-7 rounded-lg drop-shadow hover:bg-opacity-20 space-y-4 bg-opacity-10 bg-[#61dbfb] skill"
           >
             <img src="images/icons/react.png" alt="" />
             <h4 class="text-lg font-bold">React js</h4>
@@ -313,11 +313,18 @@
         </div>
       </section>
 
-      <section class="resume">
-        <h3 class="section-title text-center">A summary of My Resume</h3>
-        <div class="resume-container">
-          <div class="resume-column">
-            <h3 class="resume-column-title">My Education</h3>
+      <section class="resume space-y-4 container mx-auto">
+        <h3 class="text-4xl font-bold text-black text-center">
+          A summary of My Resume
+        </h3>
+        <p class="text-gray-400 text-lg text-center w-full md:w-9/12 mx-auto">
+          An overview of my professional background, skills, and experience.
+        </p>
+        <div class="flex flex-col md:flex-row gap-6">
+          <div class="resume-column w-full md:w-1/2 rounded-2xl p-4 space-y-4">
+            <h3 class="border border-gray text-2xl p-2 font-bold">
+              My Education
+            </h3>
             <div class="experience">
               <h4 class="experience-title">
                 BSc in Computer Science & Engineering
@@ -341,8 +348,10 @@
               </h5>
             </div>
           </div>
-          <div class="resume-column">
-            <h3 class="resume-column-title">My Experience</h3>
+          <div class="resume-column w-full md:w-1/2 rounded-2xl p-4 space-y-4">
+            <h3 class="border border-gray text-2xl p-2 font-bold">
+              My Experience
+            </h3>
             <div class="experience">
               <h4 class="experience-title">Assistant Engineer</h4>
               <h5 class="experience-sub-title">
@@ -360,10 +369,86 @@
           </div>
         </div>
         <div class="text-center resume-download-cv">
-          <button class="btn-primary">
-            <i class="fa-solid fa-download"></i> Download CV
-          </button>
+          <a
+            class="btn text-white bg-[#00bda5] text-lg font-bold hover:bg-[#00bda5] hover:opacity-60"
+            ><i class="fa-solid fa-download"></i>Download CV</a
+          >
         </div>
+      </section>
+      <!-- contact form  -->
+      <section
+        id="contact_us"
+        class="bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover py-24 px-4 md:px-0"
+      >
+        <div class="container mx-auto space-y-6">
+          <h2 class="text-2xl md:text-4xl font-bold text-black text-center">
+            Let’s Discuss Next Project
+          </h2>
+          <p
+            class="text-base font-medium text-lite_opacity_color text-center md:w-3/6 mx-auto"
+          >
+            Ready to start your next design project? Share your vision with us,
+            and let’s collaborate to turn your ideas into reality.
+          </p>
+        </div>
+        <!-- input form  -->
+        <form class="grid grid-cols-1 md:grid-cols-4 gap-4 p-4 w-5/6 mx-auto">
+          <!-- First Name -->
+          <div class="col-span-1 md:col-span-2">
+            <input
+              type="text"
+              id="firstName"
+              class="input w-full rounded-3xl rounded-3xl"
+              placeholder="First Name*"
+            />
+          </div>
+
+          <!-- Last Name -->
+          <div class="col-span-1 md:col-span-2">
+            <input
+              type="text"
+              id="lastName"
+              class="input w-full rounded-3xl"
+              placeholder="Last Name*"
+            />
+          </div>
+
+          <!-- Phone -->
+          <div class="col-span-1 md:col-span-2">
+            <input
+              type="number"
+              id="phone"
+              class="input w-full rounded-3xl"
+              placeholder="Phone Number*"
+            />
+          </div>
+
+          <!-- Email -->
+          <div class="col-span-1 md:col-span-2">
+            <input
+              type="email"
+              id="email"
+              class="input w-full rounded-3xl"
+              placeholder="Email Number*"
+            />
+          </div>
+
+          <!-- Message -->
+          <div class="col-span-1 md:col-span-4 row-span-4">
+            <textarea
+              id="message"
+              class="textarea w-full rounded-3xl h-32 md:h-full"
+              placeholder="Write your message here"
+            ></textarea>
+          </div>
+          <!-- Submit Button -->
+          <div class="col-span-1 md:col-span-4">
+            <a
+              class="btn text-white bg-[#00bda5] text-lg font-bold hover:bg-[#00bda5] hover:opacity-60 w-full"
+              >Send Mail</a
+            >
+          </div>
+        </form>
       </section>
     </main>
 

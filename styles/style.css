@@ -180,13 +180,11 @@ main section {
   text-align: center;
 }
 
-
-
-.skill {
+/* .skill {
   padding: 30px;
   border-radius: 5px;
   box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
-}
+} */
 .skill:hover,
 .resume-column:hover {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
@@ -202,22 +200,13 @@ main section {
   gap: 24px;
 }
 .resume-column {
-  width: 50%;
   background: linear-gradient(
-    270deg,
+    45deg,
     rgb(255, 255, 255),
-    rgba(255, 255, 255, 0) 100%
+    rgba(255, 255, 255, 0.3) 100%
   );
-  border-radius: 15px;
-  padding: 18px;
-  background-color: #fff8f3;
 }
 
-.resume-column-title {
-  border: 1px solid gray;
-  padding: 5px;
-  border-radius: 5px;
-}
 .experience-sub-title {
   font-size: 20px;
   font-weight: 600;
@@ -245,18 +234,13 @@ main section {
   width: 50%;
 } */
 
-
-
-
-
-
 /* responsive media  */
 /* for small device  */
 @media screen and (max-width: 576px) {
   .skills-container,
   .resume-container,
   .about-items,
-  .banner{
+  .banner {
     flex-direction: column;
   }
   .hamBurger {
@@ -287,8 +271,7 @@ main section {
   /* footer {
     flex-direction: column-reverse;
   } */
- 
-  
+
   .banner-profile-pic {
     width: 100%;
   }
